@@ -1,0 +1,69 @@
+<div id='footer' class="container-fluid">
+    <div class="row">
+        <div class="span3">
+            <img class="zhuanzhuan" src="/static/me.gif" class="fimage">
+        </div>
+        <div class="span3">
+            <!-- <div class="character360"></div> -->
+            <img class="zhuanzhuan" src="/static/face.gif" class="fimage">
+        </div>
+    </div>
+    <div>
+        <div id="footerabout">
+            <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+            <p>{{ site.about }}</p>
+            <p>Copyright © 2016-2116 I am All Rights
+                Reserved. 备案号：粤ICP备16008312号-1  |<a href="{{"/feed.xml" | prepend: site.baseurl }}">RSS</a></p>
+	    <!-- <p><a href="https://analytics.google.com">谷歌分析</a>|  -->
+            </p>
+
+            <!-- |<a href="https://disqus.com/admin/">DISQUS</a></p> -->
+       </div>
+    </div>
+</div>
+<div>
+    <a class="gototop" title="返回顶部" target="_self" href="javascript:void(0)"></a>
+    <script type="text/javascript" src="/static/js/jquery.gototop.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".gototop").gototop({
+                position : 0,
+                duration : 1250,
+                visibleAt : 300,
+                classname : "isvisible"
+            });
+        });
+    </script>
+</div>
+
+<style>
+    /*.zhuanzhuan img:hover{*/
+        /*transform: rotate(-120deg);*/
+        /*transform-origin: 95% 40% 0;*/
+    /*}*/
+
+    .character360 {
+    width: 300px;
+    height: 300px;
+    margin: 40px auto 0 auto;
+    background: no-repeat url("/static/code.jpg") left top;
+    webkit-background-size: 300px 300px;
+    -moz-background-size: 300px 300px;
+    background-size: 300px 300px;
+    /*-webkit-border-radius: 110px;*/
+    /*border-radius: 110px;*/
+    -webkit-transition: -webkit-transform 2s ease-out;
+    -moz-transition: -moz-transform 2s ease-out;
+    -o-transition: -o-transform 2s ease-out;
+    -ms-transition: -ms-transform 2s ease-out;
+    }
+
+    .character360:hover {
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+    }
+</style>
+</script>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://www.hackerzhou.me/ex_love/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>生日快乐</title>
+	
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="./index/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="./index/jquery.js"></script>
+	<script type="text/javascript" src="./index/garden_dev.js"></script>
+    <script type="text/javascript" src="./index/functions_dev.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 625px; margin-top: 10px; margin-left: 119.5px;">
+			<div id="code" style="margin-top: 112.5px;">
+			<span class="comments">/**</span><br>
+				<span class="space"><span class="comments">* 我们是快乐的一家人，而今天你生日了</span><br>
+				<span class="space"><span class="comments">* 所以我用代码写了这个东西来纪念一下</span><br>
+				<span class="space"><span class="comments">*/</span><br>
+				Man u = <span class="keyword">new</span> Man(<span class="string">"兔子"</span>);<br>
+				Family us = <span class="keyword">new</span> Family(<span class="string">"一家子"</span>);<br>
+				<span class="comments">//你，我们</span><br>
+				u.happybirth().today();<br>
+				<span class="comments">// 祝今天生日快乐 </span><br>
+				u.like("傻兔子").forever();<br>
+				<span class="comments">// 永远像傻兔子</span><br>
+				us.love(u);<br>
+				<span class="comments">//呵呵，就这样吧<br>//真的编不下去了<br>//下面的东西凑合先看看吧</span><br><br><br>
+				<span class="comments">
+				/*一句生日快乐无法代替我的心意，永远和你相伴才是我最大的心愿。<br />
+				一年又一年，真诚的祝福传递与你，愿你开心、幸福！生日快乐！<br />
+				一年中，今天是属于你的：你的生日，你的华诞。我祝贺你，这张贺卡，还有真诚的心，都是属于你的。<br />
+				一笑烦恼跑，二笑怒憎消，三笑憾事了，四笑病魔逃，五笑永不老，六笑乐逍遥，时常开笑口，寿比彭祖高。<br />
+				一支蜡烛，一颗心愿，一份真情，祝你生日快乐！<br />
+				因为你的诞生，使这一天别具意义，也显得分外美丽！只是一个小小的问候，却是一个浓浓的真意！<br />
+				因为你的降临，这一天成了一个美丽的日子，从此世界便多了一抹诱人的色彩。朋友，祝你生日快乐！<br />
+				因为你的降临这一天成了一个美丽的日子,<span class="keyword">靓女</span>,生日快乐!*/<br />
+				</span>
+				<!--u.accepted();<br>
+				<span class="comments">// Since then, I miss u every day.</span><br>
+				i.miss(u);<br>
+				<span class="comments">// And take care of u and our love.</span><br>
+				i.takeCareOf(u);<br>
+				<span class="comments">// You say that you won't be so easy to marry me.</span><br>
+				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br>
+				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br>
+				<span class="keyword">while</span> (isHesitate) {<br>
+				<span class="placeholder">i.waitFor(u);<br>
+				<span class="placeholder"><span class="comments">// I think it is an important decision</span><br>
+				<span class="placeholder"><span class="comments">// and you should think it over.</span><br>
+				<span class="placeholder">isHesitate = u.thinkOver();<br>
+				}<br>
+				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br>
+				i.marry(u);<br>
+				i.liveHappilyWith(u);<br>-->
+			</span></span></span></span></span></span></span>_</div>
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words" style="position: absolute; top: 205px; left: 629.5px;">
+					<div id="messages" style="display: block;">
+						兔子, 生日快乐
+						<div id="elapseClock"><span class="digit">0</span> day <span class="digit">0</span> hr <span class="digit">0</span> min <span class="digit">0</span> sec</div>
+					</div>
+					<div id="loveu" style="display: block;">
+						祝你年年十八岁，傻兔子.<br>
+						<div class="signature">- 左边是从网上摘录的（勿喷）</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			Copyright © 2015 <a href="https://www.lenggirl.com"</a> 2015-2016<br />
+			Power by 程序猿
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var displayMode = 1;
+		var together = new Date();
+		together.setFullYear(1993, 6, 5);
+		together.setHours(14);
+		together.setMinutes(52);
+		together.setSeconds(51);
+		together.setMilliseconds(0);
+		
+		$("#loveHeart").click(function(){
+			displayMode *= -1;
+			timeElapse(together, displayMode);
+		});
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together, displayMode);
+			setInterval(function () {
+				timeElapse(together, displayMode);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+
+
+</body></html>

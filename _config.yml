@@ -1,0 +1,20 @@
+title: 矛盾的PPt(゜-゜)つ
+email: gdccmcm14@live.com
+description:  这是一个记录文章的博客。
+about: > # this means to ignore newlines until "baseurl:"
+  我国社会主要矛盾已经转化为人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾。 --- 来自严肃的介绍
+roll: >
+  18岁96个月的程序猿, 来微博互动吧：https://weibo.com/1922625081
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hunterhug.github.io" # the base hostname & protocol for your site
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
+paginate: nil
+paginate_path: "page:num"
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude: [README.md]
+permalink: /:categories/:title.html

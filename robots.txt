@@ -1,0 +1,32 @@
+# fuck other ua beside baidu and google
+User-agent:  Baiduspider
+Disallow: /other/
+Disallow: /picture/
+Disallow: /stylesheets/
+Disallow: /static/
+
+User-Agent:  Googlebot
+Disallow: /other/
+Disallow: /picture/
+Disallow: /stylesheets/
+Disallow: /static/
+
+User-agent:  Bingbot
+Disallow:  /
+
+User-Agent:  360Spider
+Disallow:  /
+
+User-Agent:  Yisouspider
+Disallow:  /
+
+User-Agent:  Sogouspider
+Disallow:  /
+
+User-Agent:  Yahoo!  Slurp
+Disallow:  /
+
+User-Agent:  *
+Disallow:  /
+
+Sitemap: https://www.lenggirl.com/page/all.html
