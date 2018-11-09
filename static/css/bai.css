@@ -22,7 +22,7 @@ table, th, td{
     font-size: 1.1em
 }
 
-img {
+.post-content img {
     text-align: center;
     border: 0.5px dotted black;
     background-color:peachpuff;
